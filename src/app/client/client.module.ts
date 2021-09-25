@@ -6,6 +6,7 @@ import { TheaterComponent } from './pages/theater/theater.component';
 import { ReviewComponent } from './pages/review/review.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ClientRoutingModule } from './client-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,8 @@ import { ClientRoutingModule } from './client-routing.module';
     HomeComponent,
     TheaterComponent,
     ReviewComponent,
-    ContactComponent
+    ContactComponent,
   ],
-  imports: [CommonModule, ClientRoutingModule],
+  imports: [CommonModule, ClientRoutingModule, SharedModule],
 })
 export class ClientModule {}
