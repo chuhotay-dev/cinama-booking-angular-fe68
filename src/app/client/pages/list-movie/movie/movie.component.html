@@ -1,0 +1,15 @@
+<div class="card">
+  <img class="card-img-top" [src]="movie.hinhAnh" alt="" />
+  <div class="card-body">
+    <h4 class="card-title">{{ movie.tenPhim }}</h4>
+    <a class="btn btn-success">Detail</a>
+    <button
+      class="btn btn-danger mx-2"
+      data-toggle="modal"
+      data-target="#modelId"
+      (click)="quickView()"
+    >
+      Xem nhanh
+    </button>
+  </div>
+</div>

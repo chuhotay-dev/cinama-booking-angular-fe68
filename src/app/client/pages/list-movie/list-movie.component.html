@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <ng-container *ngIf="listMovie">
+      <div class="col-md-3" *ngFor="let movie of listMovie">
+        <app-movie [movie]="movie"></app-movie>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<app-popup></app-popup>
