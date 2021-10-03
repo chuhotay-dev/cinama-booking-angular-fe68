@@ -15,6 +15,7 @@ export class ListMovieComponent implements OnInit {
       .get('QuanLyPhim/LayDanhSachPhim?maNhom=GP03')
       .subscribe((result: any) => {
         this.listMovie = result.content;
+        console.log(this.listMovie)
       });
   }
 }

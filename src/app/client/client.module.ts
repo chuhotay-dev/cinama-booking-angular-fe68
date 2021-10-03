@@ -7,6 +7,7 @@ import { ReviewComponent } from './pages/review/review.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { DemoPipesComponent } from './pages/demo-pipes/demo-pipes.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SharedModule } from '../shared/shared.module';
     TheaterComponent,
     ReviewComponent,
     ContactComponent,
+    DemoPipesComponent,
   ],
   imports: [CommonModule, ClientRoutingModule, SharedModule],
 })
